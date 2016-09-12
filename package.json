@@ -1,0 +1,29 @@
+{
+  "name": "promiscuous-mysql",
+  "version": "0.0.0",
+  "description": "Promise-based MySQL client",
+  "main": "lib/database.js",
+  "scripts": {
+    "lint": "standard",
+    "nodeunit": "nodeunit tests/unit/**",
+    "test": "npm run lint && npm run nodeunit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clipper-digital/promiscuous-mysql.git"
+  },
+  "author": "Scott González <scott.gonzalez@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clipper-digital/promiscuous-mysql/issues"
+  },
+  "homepage": "https://github.com/clipper-digital/promiscuous-mysql#readme",
+  "dependencies": {
+    "mysql": "^2.11.1"
+  },
+  "devDependencies": {
+    "nodeunit": "^0.9.1",
+    "sinon": "^1.17.5",
+    "standard": "^6.0.8"
+  }
+}
