@@ -1,0 +1,7 @@
+{
+  "host": "localhost",
+  "port": 3456,
+  "user": "test_user",
+  "password": "test_user_password",
+  "database": "promiscuous"
+}
