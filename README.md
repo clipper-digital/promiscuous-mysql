@@ -69,7 +69,7 @@ Creates a new connection pool.
 Creates a new `Connection` instance, invokes the callback with the new instance, then ends the connection.
 
 * `name` (String): The name of the pool to use.
-* `callback` (Function: `function(connection) Returns: Promise`): A callback used to perform queries with the created connection. Must return a promise indicating whether the operation was successful. The value of the promise returned from the callback will become the return value for `withConnection()`. If there is an error creating the connection, the callback will not be invoked and the returned promise will be rejected.
+* `callback` (Function: `function(connection) Returns: Promise`): A callback used to perform queries with the created connection. Must return a promise indicating whether the operation was successful. The value of the promise returned from the callback will become the return value for `withPooledConnection()`. If there is an error creating the connection, the callback will not be invoked and the returned promise will be rejected.
 
 
 
@@ -78,7 +78,7 @@ Creates a new `Connection` instance, invokes the callback with the new instance,
 Creates a new `Connection` instance, starts a transaction, invokes the callback, then ends the transaction and connection.
 
 * `name` (String): The name for the pool.
-* `callback` (Function: `function(connection) Returns: Promise`): A callback used to perform queries within the created transaction. Must return a promise indicating whether the operation was successful. If the callback's promise is resolved, the transaction will be committed; if the callback's promise is rejected, the transaction will be rolled back. The value of the promise returned from the callback will become the return value for `withTransaction()`. If there is an error creating the connection, the callback will not be invoked and the returned promise will be rejected.
+* `callback` (Function: `function(connection) Returns: Promise`): A callback used to perform queries within the created transaction. Must return a promise indicating whether the operation was successful. If the callback's promise is resolved, the transaction will be committed; if the callback's promise is rejected, the transaction will be rolled back. The value of the promise returned from the callback will become the return value for `withPooledTransaction()`. If there is an error creating the connection, the callback will not be invoked and the returned promise will be rejected.
 
 
 
